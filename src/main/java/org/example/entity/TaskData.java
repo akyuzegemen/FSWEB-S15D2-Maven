@@ -3,15 +3,15 @@ package org.example.entity;
 import java.util.*;
 
 public class TaskData {
-    private Set<Task> anssTasks;
+    private Set<Task> annsTasks;
     private Set<Task> bobsTasks;
-    private Set<Task> carolTasks;
+    private Set<Task> carolsTasks;
     private Set<Task> unassignedTasks;
 
-    public TaskData(Set<Task> anssTasks, Set<Task> bobsTasks, Set<Task> carolTasks, Set<Task> unassignedTasks) {
-        this.anssTasks = anssTasks;
+    public TaskData(Set<Task> annsTasks, Set<Task> bobsTasks, Set<Task> carolTasks, Set<Task> unassignedTasks) {
+        this.annsTasks = annsTasks;
         this.bobsTasks = bobsTasks;
-        this.carolTasks = carolTasks;
+        this.carolsTasks = carolTasks;
         this.unassignedTasks = unassignedTasks;
     }
 
@@ -19,13 +19,13 @@ public class TaskData {
     {
         switch (name) {
             case "ann":
-                return this.anssTasks;
+                return this.annsTasks;
 
             case "bob":
                 return this.bobsTasks;
 
             case "carol":
-                return this.carolTasks;
+                return this.carolsTasks;
 
             case "all":
                 return this.unassignedTasks; // burasi tam tarif edilmemis
